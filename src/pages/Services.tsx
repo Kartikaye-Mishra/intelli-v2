@@ -13,10 +13,10 @@ const ServicesPage: React.FC = () => {
     <div className="font-sans ">
       {/* Hero */}
       <section className="bg-gray-50 py-24 px-6 text-center ">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+        <h1 className="text-4xl  font-bold mb-4">
           Our <span className="text-primary">Services</span>
         </h1>
-        <p className="max-w-2xl mx-auto text-gray-700">
+        <p className="max-w-2xl mx-auto md:text-lg text-gray-700 ">
           At IntelliInsights we offer a full spectrum of digital services 
           to launch, grow, and scale your online presence.
         </p>

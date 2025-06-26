@@ -32,7 +32,7 @@ const Header = () => {
                   : 'text-gray-700 hover:text-primary hover:border-b-2 hover:border-primary'
               }`}
             >
-              {<item.icon className='h-5 w-5'/>} {item.label}
+              {<item.icon className='h-5 w-5'/>} <span className={`${isActive(item.path)?"text-black":""}`}>{item.label}</span>
             </Link>
           ))}
         </nav>
