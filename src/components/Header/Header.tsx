@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import {FaTimes, FaBars} from 'react-icons/fa';
 import { navItems } from '../../constants/general';
 import { fullCompanyName } from '../../constants/title';
+import { IoIosMail } from 'react-icons/io';
 
 
 
@@ -35,6 +36,14 @@ const Header = () => {
               {<item.icon className='h-5 w-5'/>} <span className={`${isActive(item.path)?"text-black":""}`}>{item.label}</span>
             </Link>
           ))}
+
+          <Link
+  to="/#getintouch"
+  className="flex  items-center justify-center gap-2 bg-primary text-white font-medium py-1 px-1 lg:px-4 lg:py-2 rounded-md hover:bg-primary/90 transition"
+>
+<IoIosMail   className='hidden md:inline-block text-xl'/>
+  <span className="md:hidden lg:inline-block">Get in Touch</span>
+</Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -69,6 +78,16 @@ const Header = () => {
               </div>
             </Link>
           ))}
+                <Link
+    to="/#getintouch"
+    className="flex items-center gap-2 py-2 text-primary font-medium"
+  >
+    <button className='flex border border-primary items-center justify-center bg-primary/90 text-white gap-2 py-1 px-2 rounded-md'>
+
+    <IoIosMail className="h-5 w-5" />
+    <span>Get in Touch</span>
+    </button>
+  </Link>
         </div>
       )}
     </header>

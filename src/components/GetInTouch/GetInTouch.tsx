@@ -11,7 +11,7 @@ export default function GetInTouch() {
     setEmail("");
   }
   return (
-  <section className="py-16 px-4 md:px-8 flex flex-col lg:flex-row items-center justify-between gap-12 bg-white">
+  <section id="getintouch" className="py-16 px-4 md:px-8 flex flex-col lg:flex-row items-center justify-between gap-12 bg-white">
       <div className="w-full lg:w-1/2">
         <img src={subImg} alt="Get in touch" className="w-full max-w-sm lg:max-w-md mx-auto" />
       </div>

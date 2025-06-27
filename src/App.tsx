@@ -7,6 +7,7 @@ import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
 import { Toaster } from 'react-hot-toast';
 import ServicesPage from './pages/Services';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
 
       <Header />
       <div className="flex-grow mt-12"> {/* push content below fixed header */}
+          <ScrollToTop />
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/about" element={<AboutPage />} />

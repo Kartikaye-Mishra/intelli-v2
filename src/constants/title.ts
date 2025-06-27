@@ -1,4 +1,4 @@
-export const websiteName = "IntelliInsights Technologies"
+export const websiteName = "IntelliInsights "
 export const fullCompanyName = "IntelliInsights Technologies"
 export const contactNumber = "+91 8688999003"
 export const contactMail = "contact@intelliinsightstechnologies.com"
